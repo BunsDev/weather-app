@@ -1,38 +1,74 @@
+body {
+    background-color: #F5EEDC;
+}
+
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Form */
+
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.city-field {
+    width: 250px;
+    height: 30px;
+    font-size: 20px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+#city-error {
+    visibility: hidden;
+    color: #DD4A48;
 }
 
-.App-link {
-  color: #61dafb;
+/* TempToggler */
+
+.temptoggler button {
+    margin: 10px 10px;
+    width: 37px;
+    height: 37px;
+    font-size: 22px;
+    background: #ECB390;
+    color: black;
+    text-decoration: none;
+    border: none;
+    border-radius: 20%;
+    cursor: pointer;
+    transition: filter 0.3s; 
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.temptoggler button:hover {
+    float: right;
+    filter: brightness(90%);
+}
+
+/* Weather */
+
+.forecast-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.weather-info {
+    width: 300px;
+    height: 400px;
+    background-color: #C0D8C0;
+    margin: 10px 10px;
+    border-radius: 8%;
+}
+
+/* Media Queries */
+
+@media only screen and (max-width: 600px) {
+    .forecast-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 }

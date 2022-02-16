@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import TempToggler from '../TempToggler/TempToggler';
 import WeatherInfo from './WeatherInfo/WeatherInfo';
 
+/* Component that displays City name and the 3 day forecast */
 const Weather = (props) => {
   const [isCelcius, setCelcius] = useState(false);
   const [city, setCity] = useState('');

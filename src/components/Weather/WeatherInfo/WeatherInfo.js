@@ -1,5 +1,6 @@
 import React from 'react';
 
+/* Component that displays a single day forecast with various information */
 const WeatherInfo = (props) => {
   const { isCelcius, date, tempCelcius, tempFaren, conditionText, icon } =
     props;

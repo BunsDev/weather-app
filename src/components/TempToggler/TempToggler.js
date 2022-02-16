@@ -1,5 +1,6 @@
 import React from 'react';
 
+/* Button Component that flips the isCelcius property when clicked */
 const TempToggler = (props) => {
   const { isCelcius, setCelcius } = props;
   return (

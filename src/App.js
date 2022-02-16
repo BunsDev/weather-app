@@ -1,12 +1,12 @@
 import React from 'react';
 import Weather from './components/Weather/Weather';
 
-import './App.css';
+import './styles/styles.css';
 
 function App() {
   return (
     <div className="App">
-      <h1>Weather App</h1>
+      <h1 className="title-font">Weather App</h1>
       <Weather />
     </div>
   );

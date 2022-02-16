@@ -1,0 +1,122 @@
+/* Colors */
+/* Fonts */
+/* Form */
+.form-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.city-field {
+  width: 250px;
+  height: 30px;
+  font-size: 20px;
+}
+
+#city-error {
+  margin: 0 0;
+  visibility: hidden;
+  color: #DD4A48;
+}
+
+/* TempToggler */
+.temptoggler button {
+  margin: 10px 10px;
+  width: 37px;
+  height: 37px;
+  font-size: 22px;
+  background: #ECB390;
+  color: black;
+  text-decoration: none;
+  border: none;
+  border-radius: 20%;
+  cursor: pointer;
+  -webkit-transition: -webkit-filter 0.3s;
+  transition: -webkit-filter 0.3s;
+  transition: filter 0.3s;
+  transition: filter 0.3s, -webkit-filter 0.3s;
+}
+
+.temptoggler button:hover {
+  float: right;
+  -webkit-filter: brightness(90%);
+          filter: brightness(90%);
+}
+
+/* Weather */
+.forecast-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.weather-info {
+  width: 300px;
+  height: 400px;
+  background-color: #C0D8C0;
+  margin: 10px 10px;
+  border-radius: 8%;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 600px) {
+  .forecast-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+/* Generic */
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #F5EEDC;
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+h1 {
+  font-weight: 400;
+}
+
+h2, h3 {
+  font-weight: 300;
+}
+/*# sourceMappingURL=styles.css.map */

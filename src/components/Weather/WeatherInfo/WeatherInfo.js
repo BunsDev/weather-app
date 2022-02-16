@@ -35,14 +35,23 @@ const WeatherInfo = (props) => {
       default:
     }
 
-    return [`${dateArr[1]} / ${dateArr[2]}`, day];
+    return [`${dateObj.getMonth()} / ${dateObj.getDate()}`, day];
   };
+
+  console.log(icon);
 
   let convertArr = convertDate(date);
   return (
     <div className="weather-info">
       <h1>{convertArr[0]}</h1>
       <h1>{convertArr[1]}</h1>
+      <img src={icon} alt={conditionText} width="100" height="100" />
+      {isCelcius ? (
+        <h1>{tempCelcius} &#x2103;</h1>
+      ) : (
+        <h1>{tempFaren} &#8457;</h1>
+      )}
+      <h2>{conditionText}</h2>
     </div>
   );
 };

@@ -21,6 +21,7 @@ body {
 }
 
 #city-error {
+    margin: 0 0;
     visibility: hidden;
     color: #DD4A48;
 }

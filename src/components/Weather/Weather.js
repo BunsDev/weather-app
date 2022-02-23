@@ -9,16 +9,20 @@ const Weather = (props) => {
   const [prevCity, setPrevCity] = useState('');
   const [forecast, setForecast] = useState([]);
 
+  // Set up env variables
+  //require('dotenv').config();
+
   const handleChange = (e) => {
     setCity(e.target.value);
   };
 
+  // Retrieves the 3 Day forecast through a GET request
   const getWeatherData = async (e) => {
     e.preventDefault();
     if (city !== '') {
       // GET request to Weather API for 3 day forecast
       const data = await fetch(
-        `https://api.weatherapi.com/v1/forecast.json?key=69b4a3ba8d12406d945101924221302&q=${city}&days=3`
+        `https://api.weatherapi.com/v1/forecast.json?key=${process.env.REACT_APP_API_KEY}&q=${city}&days=3`
       )
         .then((res) => res.json())
         .then((data) => data)

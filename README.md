@@ -26,4 +26,4 @@ This application displays the 3 day forecast of any city.
 ## Approach
 
 * Started by creating user stories, wireframes and targeting users' pain points
-* Developed and tested each feature one step at a time before coding the next feature.
+* Developed and tested each feature one step at a time before coding the next feature
